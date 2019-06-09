@@ -11,3 +11,4 @@ Important:
 ## Terminology
 User: User is a person, thing or object who/which is at the center of the internet
 Publisher: A publisher is a person, thing or object who/which serve content to the users
+

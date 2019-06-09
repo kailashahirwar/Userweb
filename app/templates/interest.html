@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load render_table from django_tables2 %}
+
+{% block content %}
+<br><br><br><br>
+    <h2>New Interest</h2>
+    <form method="POST" class="post-form" action="/user/interests/">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="save btn btn-default">Add Interest</button>
+    </form>
+
+    <br>
+    <h2>My Interests</h2>
+    <div>
+         {% render_table interests %}
+    </div>
+
+{% endblock %}
