@@ -16,3 +16,11 @@ class Requirement(models.Model):
 
     class Meta:
         db_table = 'requirements'
+
+
+class Content(models.Model):
+    content = models.TextField(default="")
+    created_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        db_table = 'contents'
