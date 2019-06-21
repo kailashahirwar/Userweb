@@ -3,8 +3,13 @@
 {% load crispy_forms_tags %}
 {% load render_table from django_tables2 %}
 
-{% block content %}
+{% block navigation %}
+<li class="nav-item">
+  <a class="nav-link" href="/user/home">Home</a>
+</li>
+{% endblock %}
 
+{% block content %}
     <br>
     {% if messages %}
       <ul class="messages">

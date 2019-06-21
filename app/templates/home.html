@@ -3,6 +3,12 @@
 {% load crispy_forms_tags %}
 {% load render_table from django_tables2 %}
 
+{% block navigation %}
+<li class="nav-item">
+  <a class="nav-link" href="/user/interests">Interests</a>
+</li>
+{% endblock %}
+
 {% block content %}
 
 <h2>Contents</h2>
