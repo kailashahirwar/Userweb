@@ -12,3 +12,11 @@ Important:
 User: User is a person, thing or object who/which is at the center of the internet
 Publisher: A publisher is a person, thing or object who/which serve content to the users
 
+We support:
+1. Text (Raw) - text
+2. Url (Link) - url
+3. Images (Some formats) - image
+4. Gifs (Some formats) - gif
+5. Audio (Some formats) - audio
+6. Video (Some formats) - video
+7. PDF Documents - pdf

@@ -18,8 +18,17 @@ class Requirement(models.Model):
         db_table = 'requirements'
 
 
+class ContentType(models.Model):
+    name = models.CharField(max_length=200, default="")
+    created_at = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        db_table = 'content_types'
+
+
 class Content(models.Model):
-    content = models.TextField(default="")
+    content = models.TextField(default="", null=False)
+    type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     created_at = models.DateTimeField(default=timezone.now)
 
     class Meta:

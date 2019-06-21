@@ -12,4 +12,4 @@ class InterestForm(forms.ModelForm):
 class ContentForm(forms.ModelForm):
     class Meta:
         model = Content
-        fields = ('content',)
+        fields = ('content', 'type')

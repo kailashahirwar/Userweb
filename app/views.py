@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django_tables2 import RequestConfig
 
 from app.forms import InterestForm, ContentForm
-from app.models import Interest, Content
+from app.models import Interest, Content, ContentType
 from app.tables import InterestTable, ContentTable
 
 
@@ -45,6 +45,7 @@ def get_interests(request):
             name = form.cleaned_data['name']
             if not Interest.objects.filter(name=name).exists():
                 interest = form.save(commit=False)
+                interest['type'] = ContentType.objects.get(name="text")
                 interest.save()
                 messages.success(request, 'Interest submitted successfully.')
                 return HttpResponseRedirect('/user/interests')

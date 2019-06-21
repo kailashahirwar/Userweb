@@ -1,0 +1,51 @@
+[
+  {
+    "model": "app.ContentType",
+    "pk": 1,
+    "fields": {
+      "name": "text"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 2,
+    "fields": {
+      "name": "url"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 3,
+    "fields": {
+      "name": "image"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 4,
+    "fields": {
+      "name": "gif"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 5,
+    "fields": {
+      "name": "audio"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 6,
+    "fields": {
+      "name": "video"
+    }
+  },
+  {
+    "model": "app.ContentType",
+    "pk": 7,
+    "fields": {
+      "name": "pdf"
+    }
+  }
+]
